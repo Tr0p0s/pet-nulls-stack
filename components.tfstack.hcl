@@ -48,3 +48,16 @@ component "nulls" {
     null = provider.null.this
   }
 }
+
+component "tags" {
+  source  = "app.terraform.io/hp-onecloud/tags/aws//modules/tags"
+  version = "2.0.2"
+
+  inputs = {
+    app_name = component.pet.name
+  }
+
+  providers = {
+    null = provider.null.this
+  }
+}
