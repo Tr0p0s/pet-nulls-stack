@@ -61,3 +61,7 @@ component "tags" {
     null = provider.null.this
   }
 }
+
+output "tags" {
+  value = component.tags.tags
+}
