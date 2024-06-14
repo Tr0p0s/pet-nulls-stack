@@ -64,4 +64,5 @@ component "tags" {
 
 output "tags" {
   value = component.tags.tags
+  type  = map(string)
 }
